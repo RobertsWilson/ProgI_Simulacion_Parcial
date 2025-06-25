@@ -1,6 +1,6 @@
 package model;
 
-public abstract class Bicicleta {
+public abstract class Bicicleta implements Vendible {
 
   protected String nroSerie;
   protected String modelo;

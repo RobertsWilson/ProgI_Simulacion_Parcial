@@ -9,12 +9,25 @@ public class Urbana extends Bicicleta implements Vendible{
   }
 
   @Override
+  public float getPrecio() {
+    return super.getPrecio();
+  }
+
+  @Override
+  public void setPrecio(float precio) {
+    super.setPrecio(precio);
+  }
+
+  @Override
   public String getTipo() {
     return "Urbana";
   }
 
   @Override
   public float calcularPrecioFinal() {
-    return 0;
+    if (anio < 2025){
+      return (float)(precio*0.90);
+    }
+    return (float) (precio * 1.21);
   }
 }
