@@ -67,7 +67,7 @@ public class Bicicleteria  implements Vendible {
     }
     else System.out.println("Bicicletas disponibles: ");
     for (Bicicleta bicis : bicicletas){
-      System.out.println("Tipo: " + bicis.getTipo() + " Modelo " + );
+      System.out.println("Tipo: " + bicis.getTipo() + "\n Modelo " + bicis.getModelo() +  "\n Por un precio de " + bicis.getPrecio());
     }
 
   }
